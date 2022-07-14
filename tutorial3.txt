@@ -1,0 +1,58 @@
+    Tutorial 03
+
+
+01)
+  
+    scala> def area(r:Int):Double= r*r*math.Pi
+    def area(r: Int): Double
+
+    scala> area(5)
+    val res2: Double = 78.53981633974483
+
+02)
+
+  scala> def farenConvert(celcius:Int):Double={
+     | celcius*1.8 +32}
+  def farenConvert(celcius: Int): Double
+
+  scala> farenConvert(35)
+  val res3: Double = 95.0
+
+03)
+
+   scala> def volume(r:Int):Double={
+     | 4/3*r*r*r*math.Pi}
+   def volume(r: Int): Double
+
+   scala> volume(5)
+   val res4: Double = 392.6990816987241
+
+04)
+ 
+   scala> def totalCoverprice(copies:Int):Double=24.95*copies*0.4
+   def totalCoverprice(copies: Int): Double
+
+   scala> def shippingCost(copies:Int):Double= {
+       |
+       |       copies*3 +(copies-50)*0.75
+       |   }
+   def shippingCost(copies: Int): Double
+
+   scala> def totalIncome(copies:Int):Double = totalCoverprice(copies) + shippingCost(copies)
+   def totalIncome(copies: Int): Double
+
+   scala> totalIncome(60)
+   val res6: Double = 786.3000000000001
+
+05)
+    scala> def ease(distance:Int):Int= distance*8
+    def ease(distance: Int): Int
+
+    scala> def tempo(distance:Int):Int= distance*7
+    def tempo(distance: Int): Int
+
+     scala> ease(2)+tempo(3)+ease(2)
+     val res9: Int = 53
+
+
+   
